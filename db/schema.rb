@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20130729212822) do
   end
 
   create_table "votes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "link_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
